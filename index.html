@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aleidraws</title>
+    <link rel="icon" type="image" href="./media/logo.avif">
+
+    <link rel="stylesheet" href="./styles/styles.css">
+
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'serif': ['Georgia', 'serif'],
+                        'neue-roman' : ['NeueRoman'],
+                        'neue-bold' : ['NeueBold'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-white text-gray-900 font-serif">
+    <!-- Navbar -->
+    <nav class="fixed top-0 w-full bg-white/95 backdrop-blur-sm border-b border-gray-100 z-50">
+        <div class="px-10 py-4 flex justify-between items-center">
+            <img class="w-[auto] h-[4vh]"  src="./media/Alei.avif" alt="Nombre Alei">
+            <img class="size-10" src="./media/logo.avif" alt="logo alei">
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-24 pb-8 lg:pb-16 px-0 my-1">
+        <div class="max-w-7xl mx-10">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+                <!-- Navigation Links -->
+                <div class="space-y-6">
+                    <nav class="font-neue-roman text-[20px] sm:text-[25px] text-left">
+                        <a href="#seccion1" class="block   hover:text-gray-400 transition-colors duration-300">cual es mi movida</a>
+                        <a href="#seccion2" class="block   hover:text-gray-400 transition-colors duration-300">colaboraciones</a>
+                        <a href="#seccion3" class="block   hover:text-gray-400 transition-colors duration-300">mis cuadros favoritos</a>
+                        <a href="#seccion4" class="block   hover:text-gray-400 transition-colors duration-300">últimos trabajos</a>
+                        <a href="#about" class="block   hover:text-gray-400 transition-colors duration-300">about</a>
+                        <a href="#contact" class="block   hover:text-gray-400 transition-colors duration-300">contact</a>
+                    </nav>
+                </div>
+                <!-- Hero Image -->
+                <div class="lg:pl-12">
+                    <img src="./media/testing/reno.png" 
+                         alt="Dibujo de Alex o GIF" 
+                         class="w-full h-auto object-cover rounded-sm shadow-sm">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección 1 -->
+    <section id="seccion1" class="py-12 lg:py-16 px-6 lg:px-6 border-t border-gray-100">
+        <div class="">
+            <h2 class="text-4xl font-neue-roman text-right mb-4">mi movida</h2>
+           <!-- Jarrones-->
+            <h2 class="text-3xl font-neue-roman text-right mb-1">jarrones</h2>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-20">
+                <div class="space-y-6">
+                    <p class="text-lg font-light leading-relaxed">
+                        Esto son jarrones, molones lbalblabla blalbalbalbla balblablabl ablalbalbal balblablalbla alblablalba blalbalblab alb.
+                    </p>
+                    <div class="h-px bg-gray-200"></div>
+                    <p class="text-sm text-gray-600 font-light">Jarrones de Alei</p>
+                </div>
+                <div class="carousel-wrapper">
+                    <div class="carousel-container" data-carousel="0">
+                        <div class="carousel-viewport">
+                            <div class="carousel-track">
+                                <div class="carousel-slide">
+                                    <img src="./media/testing/prueba.jpg" alt="Jarrón 1">
+                                </div>
+                                <div class="carousel-slide">
+                                    <img src="./media/testing/prueba.jpg" alt="Jarrón 2">
+                                </div>
+                                <div class="carousel-slide">
+                                    <img src="./media/testing/prueba.jpg" alt="Jarrón 3">
+                                </div>
+                            </div>
+                        </div>
+                        <button class="nav-btn prev-btn" aria-label="Imagen anterior">‹</button>
+                        <button class="nav-btn next-btn" aria-label="Imagen siguiente">›</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 2 -->
+            <h2 class="text-3xl font-neue-roman text-right mb-1">flores</h2>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-20">
+                <div class="space-y-6">
+                    <p class="text-lg font-light leading-relaxed">
+                        blablalb ab albalblab ablablal balb alb abablablab b albab alba b ab lalb a balb ab ab alb al b ab lalalb a.
+                    </p>
+                    <div class="h-px bg-gray-200"></div>
+                    <p class="text-sm text-gray-600 font-light">Flores de Alei</p>
+                </div>
+                <div class="carousel-wrapper">
+                    <div class="carousel-container" data-carousel="1">
+                        <div class="carousel-viewport">
+                            <div class="carousel-track">
+                                <div class="carousel-slide">
+                                    <img src="./media/testing/prueba.jpg" alt="Serie 1">
+                                </div>
+                                <div class="carousel-slide">
+                                    <img src="./media/testing/prueba.jpg" alt="Serie 2">
+                                </div>
+                                <div class="carousel-slide">
+                                    <img src="./media/testing/prueba.jpg" alt="Serie 3">
+                                </div>
+                            </div>
+                        </div>
+                        <button class="nav-btn prev-btn" aria-label="Imagen anterior">‹</button>
+                        <button class="nav-btn next-btn" aria-label="Imagen siguiente">›</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 3 -->
+            <h2 class="text-3xl font-neue-roman text-right mb-1">esqueletos</h2>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <div class="space-y-6">
+                    <p class="text-lg font-light leading-relaxed">
+                        baaksbdkasbd absdkabsda dabdskabdskasd abdkasdbaksd asdkbasdbakdsa sdabksdbakdbkasd asdbkaskb.
+                    </p>
+                    <div class="h-px bg-gray-200"></div>
+                    <p class="text-sm text-gray-600 font-light">Esqueletos de Alei</p>
+                </div>
+                <div class="carousel-wrapper">
+                    <div class="carousel-container" data-carousel="2">
+                        <div class="carousel-viewport">
+                            <div class="carousel-track">
+                                <div class="carousel-slide">
+                                    <img src="./media/testing/prueba.jpg" alt="Colección 1">
+                                </div>
+                                <div class="carousel-slide">
+                                    <img src="./media/testing/prueba1.jpg" alt="Colección 2">
+                                </div>
+                                <div class="carousel-slide">
+                                    <img src="./media/testing/reno.png" alt="Colección 3">
+                                </div>
+                            </div>
+                        </div>
+                        <button class="nav-btn prev-btn" aria-label="Imagen anterior">‹</button>
+                        <button class="nav-btn next-btn" aria-label="Imagen siguiente">›</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección 2 - Colaboraciones -->
+    <section id="seccion2" class="py-12 lg:py-16 px-4  bg-gray-50">
+        <div class="">
+            <h2 class="text-4xl font-light text-left mb-16">Colaboraciones</h2>
+            
+            <!-- Colaboración 1 -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-20">
+                <div class="w-full">
+                    <img src="./media/desorden.jpeg" class="w-full h-[60vh] object-cover">
+                </div>
+                <div class="space-y-6">
+                    <h3 class="text-2xl font-light">Colaboracion 1</h3>
+                    <p class="text-lg font-light leading-relaxed text-gray-700">
+                        jas ajsj aj aj aja aja aja aj ajajaj a jaj ajaajjaajaja ajjajajjaj ajajaj aja aj aj ja aj ajaaja ja ja aj ajaaj ajaa ja j aja  aja.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Colaboración 2 -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-20">
+                <div class="w-full">
+                    <img src="./media/esqueleto.jpeg" class="w-full h-[60vh] object-cover">
+                </div>
+                <div class="space-y-6">
+                    <h3 class="text-2xl font-light">Colaboracion 2</h3>
+                    <p class="text-lg font-light leading-relaxed text-gray-700">
+                        jas ajsj aj aj aja aja aja aj ajajaj a jaj ajaajjaajaja ajjajajjaj ajajaj aja aj aj ja aj ajaaja ja ja aj ajaaj ajaa ja j aja  aja.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Colaboración 3 -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <div class="w-full">
+                    <img src="./media/testing/reno.png" class="w-full h-[60vh] object-cover">
+                </div>
+                <div class="space-y-6">
+                    <h3 class="text-2xl font-light">Colaboracion 3</h3>
+                    <p class="text-lg font-light leading-relaxed text-gray-700">
+                        jas ajsj aj aj aja aja aja aj ajajaj a jaj ajaajjaajaja ajjajajjaj ajajaj aja aj aj ja aj ajaaja ja ja aj ajaaj ajaa ja j aja  aja.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección 3 -->
+    <section id="seccion3" class="py-12 lg:py-16 px-4 lg:px-6">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-4xl font-light text-right mb-16">Cuadros Favoritos</h2>
+            
+            <!-- Item 1 -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-20">
+                <div class="space-y-6">
+                    <p class="text-lg font-light leading-relaxed">
+                        blabalb balbbl blab ab lab ablab a ba bla ba balb a bab lab a bla blalbalbalbalb b balb ab alb ab lab b.
+                    </p>
+                    <div class="h-px bg-gray-200"></div>
+                    <p class="text-sm text-gray-600 font-light">Nombre del Cuadro</p>
+                </div>
+                <div class="carousel-wrapper">
+                    <div class="carousel-container" data-carousel="3">
+                        <div class="carousel-viewport">
+                            <div class="carousel-track">
+                                <div class="carousel-slide">
+                                    <img src="./media/flores.jpeg" alt="Cuadro Fav 1">
+                                </div>
+                                <div class="carousel-slide">
+                                    <img src="./media/flores.jpeg" alt="Cuadro Fav 2">
+                                </div>
+                                <div class="carousel-slide">
+                                    <img src="./media/flores.jpeg" alt="Cuadro Fav 3">
+                                </div>
+                            </div>
+                        </div>
+                        <button class="nav-btn prev-btn" aria-label="Imagen anterior">‹</button>
+                        <button class="nav-btn next-btn" aria-label="Imagen siguiente">›</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 2 -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-20">
+                <div class="space-y-6">
+                    <p class="text-lg font-light leading-relaxed">
+                        lbalblabl balb ablabl ab alb ablab alb alb alb alb alb alb ab lab ab alb alb ab lballalb ab albla b.
+                    </p>
+                    <div class="h-px bg-gray-200"></div>
+                    <p class="text-sm text-gray-600 font-light">Nombre del Cuadro</p>
+                </div>
+                <div class="carousel-wrapper">
+                    <div class="carousel-container" data-carousel="4">
+                        <div class="carousel-viewport">
+                            <div class="carousel-track">
+                                <div class="carousel-slide">
+                                    <img src="./media/flores.jpeg" alt="Técnica 1">
+                                </div>
+                                <div class="carousel-slide">
+                                    <img src="./media/flores.jpeg" alt="Técnica 2">
+                                </div>
+                                <div class="carousel-slide">
+                                    <img src="./media/flores.jpeg" alt="Técnica 3">
+                                </div>
+                            </div>
+                        </div>
+                        <button class="nav-btn prev-btn" aria-label="Imagen anterior">‹</button>
+                        <button class="nav-btn next-btn" aria-label="Imagen siguiente">›</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 3 -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <div class="space-y-6">
+                    <p class="text-lg font-light leading-relaxed">
+                        lbabla ba blab a blab alb ab alb abla ab alb abla lb ab alba balb ab la ba lbalb labab lb abl.
+                    </p>
+                    <div class="h-px bg-gray-200"></div>
+                    <p class="text-sm text-gray-600 font-light">Nombre del Cuadro</p>
+                </div>
+                <div class="carousel-wrapper">
+                    <div class="carousel-container" data-carousel="5">
+                        <div class="carousel-viewport">
+                            <div class="carousel-track">
+                                <div class="carousel-slide">
+                                    <img src="./media/flores.jpeg" alt="Natural 1">
+                                </div>
+                                <div class="carousel-slide">
+                                    <img src="./media/flores.jpeg" alt="Natural 2">
+                                </div>
+                                <div class="carousel-slide">
+                                    <img src="./media/flores.jpeg" alt="Natural 3">
+                                </div>
+                            </div>
+                        </div>
+                        <button class="nav-btn prev-btn" aria-label="Imagen anterior">‹</button>
+                        <button class="nav-btn next-btn" aria-label="Imagen siguiente">›</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección 4 - Últimas Obras -->
+    <section id="seccion4" class="py-12 lg:py-16 px-4 lg:px-6 bg-gray-50">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-4xl font-light text-left mb-16">Últimos trabajos</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="space-y-4">
+                    <img src="./media/flores.jpeg" class="w-full h-80 object-cover rounded-sm">
+                    <div class="space-y-2">
+                        <h3 class="text-lg font-light">Nombre 1</h3>
+                        <p class="text-sm text-gray-600 font-light">blablabalbalb albablab la</p>
+                    </div>
+                </div>
+                
+                <div class="space-y-4">
+                    <img src="./media/flores.jpeg" class="w-full h-80 object-cover rounded-sm">
+                    <div class="space-y-2">
+                        <h3 class="text-lg font-light">Nombre 2</h3>
+                        <p class="text-sm text-gray-600 font-light">Blablablalb albab lablalb</p>
+                    </div>
+                </div>
+                
+                <div class="space-y-4">
+                    <img src="./media/flores.jpeg" class="w-full h-80 object-cover rounded-sm">
+                    <div class="space-y-2">
+                        <h3 class="text-lg font-light">Nombre 3</h3>
+                        <p class="text-sm text-gray-600 font-light">blalb ablabl alb alb ablab alb</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="py-12 lg:py-16 px-4 lg:px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="max-w-2xl ml-auto text-right">
+                <h2 class="text-4xl font-light mb-8">about</h2>
+                <p class="text-lg font-light leading-relaxed mb-6">
+                    blablabalabalbalab balablabalbalabala balbaalbalbalablbalab ablabalabalbalab abalabal ablab a albalba laba ba alabab al albalbalalablallalalaala a ablab aba labalaba balablab alab labal aabaa la baab ablba alabalbla.
+                </p>
+                <p class="text-lg font-light leading-relaxed mb-6">
+                    bldbalbblalbalblab ab abalbalb abla bab a blab ab ab a ba b ab lab a bab alalallb balblla b ba lba ba balblalalllablallallala b allalalalallalalla lalalalall aalalalalalallall allalalalalalala aala  ala a ala lballal allallbalbla lalalblalbalb alblabla.
+                </p>
+                <p class="text-lg font-light leading-relaxed">
+                    balsalbslaba absbalbal balala abalabalablabbala abalbalbalbalba albalbalabblaba aalblabalbalba labalblab ablbalablabla ablabalbal ablabalablaba lablabalal balbala.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="py-12 lg:py-16 px-4 lg:px-6 bg-gray-50">
+        <div class="max-w-7xl mx-auto">
+            <div class="max-w-2xl">
+                <h2 class="text-4xl font-light mb-8">contact</h2>
+                <div class="space-y-4">
+                    <p class="text-lg font-light">
+                        <span class="text-gray-600">Email:</span> ejemplo@midominio.com
+                    </p>
+                    <p class="text-lg font-light">
+                        <span class="text-gray-600">Instagram:</span> @aleidraws
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 lg:py-12 px-4 lg:px-6 border-t border-gray-100">
+        <div class="max-w-7xl mx-auto text-center">
+            <p class="text-sm text-gray-500 font-light">© 2024 Aleidraws. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Carousel functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const carousels = document.querySelectorAll('.carousel-container');
+            
+            carousels.forEach(carousel => {
+                const track = carousel.querySelector('.carousel-track');
+                const slides = carousel.querySelectorAll('.carousel-slide');
+                const prevBtn = carousel.querySelector('.prev-btn');
+                const nextBtn = carousel.querySelector('.next-btn');
+                
+                let currentIndex = 0;
+                let isAnimating = false;
+                
+                // Crear slides duplicados para bucle infinito
+                function setupInfiniteLoop() {
+                    // Clonar primera y última slide
+                    const firstSlide = slides[0].cloneNode(true);
+                    const lastSlide = slides[slides.length - 1].cloneNode(true);
+                    
+                    // Añadir al final e inicio
+                    track.appendChild(firstSlide);
+                    track.insertBefore(lastSlide, slides[0]);
+                    
+                    // Actualizar el track width para acomodar slides extra
+                    const totalSlides = slides.length + 2;
+                    track.style.width = `${totalSlides * 100}%`;
+                    
+                    // Actualizar width de cada slide
+                    const allSlides = track.querySelectorAll('.carousel-slide');
+                    allSlides.forEach(slide => {
+                        slide.style.width = `${100 / totalSlides}%`;
+                    });
+                    
+                    // Posicionar en la primera slide real (índice 1 porque agregamos una al inicio)
+                    currentIndex = 1;
+                    track.style.transform = `translateX(-${currentIndex * (100 / totalSlides)}%)`;
+                }
+                
+                // Función para actualizar el carousel
+                function updateCarousel(instant = false) {
+                    if (isAnimating && !instant) return;
+                    
+                    if (!instant) isAnimating = true;
+                    
+                    const allSlides = track.querySelectorAll('.carousel-slide');
+                    const totalSlides = allSlides.length;
+                    const slideWidth = 100 / totalSlides;
+                    
+                    // Aplicar transición solo si no es instantáneo
+                    track.style.transition = instant ? 'none' : 'transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94)';
+                    track.style.transform = `translateX(-${currentIndex * slideWidth}%)`;
+                    
+                    if (!instant) {
+                        setTimeout(() => {
+                            // Verificar si estamos en slides clonados y saltar instantáneamente
+                            if (currentIndex === 0) {
+                                // Estamos en el último slide clonado, saltar al último slide real
+                                currentIndex = slides.length;
+                                track.style.transition = 'none';
+                                track.style.transform = `translateX(-${currentIndex * slideWidth}%)`;
+                            } else if (currentIndex === slides.length + 1) {
+                                // Estamos en el primer slide clonado, saltar al primer slide real
+                                currentIndex = 1;
+                                track.style.transition = 'none';
+                                track.style.transform = `translateX(-${currentIndex * slideWidth}%)`;
+                            }
+                            
+                            isAnimating = false;
+                        }, 400);
+                    }
+                }
+                
+                // Función para ir al siguiente slide
+                function nextSlide() {
+                    if (isAnimating) return;
+                    currentIndex++;
+                    updateCarousel();
+                }
+                
+                // Función para ir al slide anterior
+                function prevSlide() {
+                    if (isAnimating) return;
+                    currentIndex--;
+                    updateCarousel();
+                }
+                
+                // Event listeners para botones
+                nextBtn.addEventListener('click', nextSlide);
+                prevBtn.addEventListener('click', prevSlide);
+                
+                // Navegación por teclado
+                carousel.addEventListener('keydown', (e) => {
+                    if (e.key === 'ArrowLeft') {
+                        e.preventDefault();
+                        prevSlide();
+                    } else if (e.key === 'ArrowRight') {
+                        e.preventDefault();
+                        nextSlide();
+                    }
+                });
+                
+                // Hacer el carousel focusable para navegación por teclado
+                carousel.setAttribute('tabindex', '0');
+                
+                // Inicializar carousel
+                setupInfiniteLoop();
+            });
+        });
+    </script>
+
+<style>
+    /* Ocultar scrollbar de la página completa */
+    html {
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+    }
+    html::-webkit-scrollbar {
+        display: none;
+    }
+    body {
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+    }
+    body::-webkit-scrollbar {
+        display: none;
+    }
+    
+    /* Carousel Styles */
+    .carousel-wrapper {
+        width: 100%;
+        max-width: none;
+        margin: 0 auto;
+        position: relative;
+    }
+
+    .carousel-container {
+        position: relative;
+        width: 100%;
+        height: 60vh;
+        border-radius: 0;
+        overflow: hidden;
+        box-shadow: none;
+        background: #f9fafb;
+    }
+
+    .carousel-viewport {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        border-radius: 0;
+    }
+
+    .carousel-track {
+        display: flex;
+        height: 100%;
+        transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+
+    .carousel-slide {
+        height: 100%;
+        flex-shrink: 0;
+    }
+
+    .carousel-slide img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+    }
+
+    /* Botones de navegación */
+    .nav-btn {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background: rgba(255, 255, 255, 0.9);
+        border: none;
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        font-size: 18px;
+        font-weight: 300;
+        color: #374151;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        z-index: 10;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        backdrop-filter: blur(8px);
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .prev-btn {
+        left: 15px;
+    }
+
+    .next-btn {
+        right: 15px;
+    }
+
+    .nav-btn:hover {
+        background: rgba(255, 255, 255, 1);
+        transform: translateY(-50%) scale(1.1);
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .nav-btn:active {
+        transform: translateY(-50%) scale(0.95);
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+        .carousel-container {
+            height: 40vh;
+        }
+        
+        .nav-btn {
+            width: 40px;
+            height: 40px;
+            font-size: 16px;
+        }
+        
+        .prev-btn {
+            left: 10px;
+        }
+        
+        .next-btn {
+            right: 10px;
+        }
+    }
+    
+    /* Focus styles for accessibility */
+    .nav-btn:focus {
+        outline: 2px solid #374151;
+        outline-offset: 2px;
+    }
+    
+    .carousel-container:focus {
+        outline: 2px solid #374151;
+        outline-offset: 2px;
+    }
+</style>
+</body>
+</html>
